@@ -1,0 +1,17 @@
+butun testleri calistirma komutu
+1-./node_modules/.bin/cypress run 
+
+spesifick test clasi calistirma 
+2-./node_modules/.bin/cypress run --spec cypress\integration\test_framework\iframe.cy.js
+
+3-paket calistirma 
+./node_modules/.bin/cypress run --spec cypress\integration\test_package\*.js
+
+4-browserda calistirma(headed eklenerek browser aciliyor)
+./node_modules/.bin/cypress run --spec cypress\integration\test_framework\iframe.cy.js --headed 
+(browser secilmesse default olarak electronda calisiyor)
+
+5-spesifik browser tanimlama
+./node_modules/.bin/cypress run --spec cypress\integration\test_framework\iframe.cy.js --headed browser chrome
+
+
