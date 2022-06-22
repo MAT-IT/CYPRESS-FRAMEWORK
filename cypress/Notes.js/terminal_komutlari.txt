@@ -14,4 +14,6 @@ spesifick test clasi calistirma
 5-spesifik browser tanimlama
 ./node_modules/.bin/cypress run --spec cypress\integration\test_framework\iframe.cy.js --headed browser chrome
 
+cy dashboard da spesifick test calistirma
+./node_modules/.bin/cypress run --spec cypress\integration\test_framework\iframe.cy.js --record --key ffa17bb5-4493-4ad1-b293-96be689366fa
 

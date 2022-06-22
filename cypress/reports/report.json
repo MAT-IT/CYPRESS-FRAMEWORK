@@ -1,0 +1,107 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-06-22T11:04:34.926Z",
+    "end": "2022-06-22T11:04:43.268Z",
+    "duration": 8342,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "f0dc6a69-1217-4fe8-b5dc-13fa1a99b57a",
+      "title": "",
+      "fullFile": "cypress/integration/test_framework/iframe.cy.js",
+      "file": "cypress/integration/test_framework/iframe.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "7f7864fa-18ec-4b49-8633-8f0d713ff44b",
+          "title": "iframe test",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "iframe test",
+              "fullTitle": "iframe test iframe test",
+              "timedOut": null,
+              "duration": 4903,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://the-internet.herokuapp.com/iframe'); // cy// frame e girildigini verif yapiyor iframe bu olmadan da calisiyor,\n// .frameLoaded('#mce_0_ifr')     \ncy.iframe().find(\"p\").should(\"have.text\", \"Your content goes here.\").clear();\ncy.iframe().find(\"p\").type(\"Pazartesi cigerini yerim!!!\");\ncy.get('.large-4 > div').should(\"have.text\", \"Powered by Elemental Selenium\");\ncy.iframe().find(\"p\").clear();",
+              "err": {},
+              "uuid": "5b14c782-a9d5-468f-8808-fbbe4e8241cf",
+              "parentUUID": "7f7864fa-18ec-4b49-8633-8f0d713ff44b",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "5b14c782-a9d5-468f-8808-fbbe4e8241cf"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 4903,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "report",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "reportFilename": "report",
+        "overwrite": false,
+        "html": true,
+        "json": true,
+        "charts": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}
