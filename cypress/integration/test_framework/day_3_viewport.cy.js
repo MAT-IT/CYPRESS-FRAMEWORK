@@ -7,5 +7,6 @@ describe("viewport",()=>{
         cy.viewport("iphone-6")
         .wait(4000)
         //cy.screenshot()
+        
     })
 })

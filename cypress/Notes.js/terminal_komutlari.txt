@@ -1,19 +1,31 @@
 butun testleri calistirma komutu
 1-./node_modules/.bin/cypress run 
+script objesi:
+"test": "./node_modules/.bin/cypress run",
 
 spesifick test clasi calistirma 
 2-./node_modules/.bin/cypress run --spec cypress\integration\test_framework\iframe.cy.js
 
 3-paket calistirma 
-./node_modules/.bin/cypress run --spec cypress\integration\test_package\*.js
+./node_modules/.bin/cypress run --spec cypress\integration\Smoke_test\*.js
+
+script objesi:
+"testsmoke":"./node_modules/.bin/cypress run --spec cypress/integration/Smoke_test/*.js"
 
 4-browserda calistirma(headed eklenerek browser aciliyor)
 ./node_modules/.bin/cypress run --spec cypress\integration\test_framework\iframe.cy.js --headed 
 (browser secilmesse default olarak electronda calisiyor)
+script objesi:
+"test-headed":"npm run test -- --headed"
 
 5-spesifik browser tanimlama
 ./node_modules/.bin/cypress run --spec cypress\integration\test_framework\iframe.cy.js --headed browser chrome
 
+script objesi:
+"test-chrome":"npm run test-headed -- -- browser chrome"
+6-Dasboard da calistirma
 cy dashboard da spesifick test calistirma
-./node_modules/.bin/cypress run --spec cypress\integration\test_framework\iframe.cy.js --record --key ffa17bb5-4493-4ad1-b293-96be689366fa
+./node_modules/.bin/cypress run --spec cypress\integration\Smoke_test\*.js --record --key ffa17bb5-4493-4ad1-b293-96be689366fa
 
+script objesi:
+"test-smoke-dashboard":"./node_modules/.bin/cypress run --spec cypress/integration/Smoke_test/*.js --record --key ffa17bb5-4493-4ad1-b293-96be689366fa"
