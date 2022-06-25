@@ -31,6 +31,17 @@ Cypress.Commands.add("filterLowToHigh",(productName)=>{
     cy.get("#s-result-sort-select").select("Price: Low to High",{force: true})
 
 })
+
+Cypress.Commands.add("fileupload",(img)=>{
+    cy.visit("https://the-internet.herokuapp.com/upload")
+
+    cy.get('#file-upload').attachFile(img)
+
+    //cy.get("input[id='file-upload']").should("contain.value",img)
+
+
+
+})
 // ***********************************************
 // This example commands.js shows you how to
 // create various custom commands and overwrite
